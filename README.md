@@ -1,3 +1,1 @@
 # workout-friend
-
-test
