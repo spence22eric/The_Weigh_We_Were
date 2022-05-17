@@ -1,5 +1,5 @@
 {
-  "name": "workout-friend",
+  "name": "the_weigh_we_were",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -16,5 +16,16 @@
     "mysql2": "^2.3.3",
     "node": "^17.7.2",
     "sequelize": "^6.19.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spence22eric/The_Weigh_We_Were.git"
+  },
+  "author": "Eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spence22eric/The_Weigh_We_Were/issues"
+  },
+  "homepage": "https://github.com/spence22eric/The_Weigh_We_Were#readme"
 }
