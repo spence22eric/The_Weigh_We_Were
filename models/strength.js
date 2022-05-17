@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection')
 
 class Strength extends Model { }
 
@@ -11,14 +12,12 @@ Strength.init(
             autoIncrement: true
         },
         workoutName: {
-            type: DataTypes.STRING,
-            title: VARCHAR(60),
+            type: "VARCHAR(60)",
             allowNull: false
         },
         reps: {
             type: DataTypes.INTEGER,
-            allowNull: false,
-            autoIncrement: true
+            allowNull: false
         }        
     },
     {
@@ -29,3 +28,5 @@ Strength.init(
         modelName: 'Strength'
     }
 )
+
+module.exports = Strength;
