@@ -30,5 +30,3 @@ Cardio.init(
 )
 
 module.exports = Cardio;    
-
-//test//
