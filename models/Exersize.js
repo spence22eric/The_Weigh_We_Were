@@ -1,28 +1,32 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const sequelize = require('../config/connection')
 
-class Workout extends Model { };
+class Exersize extends Model { }
 
-Workout.init(
-    { 
+Exersize.init(
+    {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
-        workout: {
+        exersizeName: {
+            type: "VARCHAR(60)",
+            allowNull: false
+        },
+        description: {
             type: DataTypes.STRING,
-            allowNull: false,
-        }
+            allowNull: false
+        }        
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'workout'
+        modelName: 'Exersize'
     }
 )
 
-module.exports = Workout;
+module.exports = Exersize;
