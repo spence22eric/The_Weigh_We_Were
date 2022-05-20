@@ -1,29 +1,16 @@
 const User = require('./User');
-const Cardio = require('./Cardio');
-const Strength = require('./Strength');
 const Workout = require('./Workout');
+const Exersize = require('./Exersize');
+const Category = require('./Category');
 
 // associations
-User.hasMany(Workout, {
-    foreignKey: 'user_id'
-});
+Category.hasMany(Exersize)
+Exersize.belongsTo(Category)
+User.hasMany(Workout)
+Workout.belongsTo(User)
+Workout.hasMany(Exersize)
+Exersize.belongsToMany(Workout, {
+    through: 'workoutExersize'
+})
 
-Strength.belongsTo(Workout, {
-    foreignKey: 'workout_id'
-});
-
-Cardio.belongsTo(Workout, {
-    foreignKey: 'workout_id'
-});
-
-Workout.hasMany(Strength, {
-    foreignKey: 'workout_id'
-});
-
-Workout.hasMany(Cardio, {
-    foreignKey: 'workout_id'
-});
-
-
-
-module.exports = { User, Cardio, Strength, Workout };
+module.exports = { User, Workout, Category, Exersize };
