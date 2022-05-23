@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 
-  body, html {
+  body {
     background-image: "./assets/images/login_image.jpeg";
     height: 100%;
     padding: 0;
