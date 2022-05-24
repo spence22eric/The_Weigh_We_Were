@@ -85,7 +85,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #ffffff;
+    color: gray;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
