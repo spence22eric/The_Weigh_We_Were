@@ -11,9 +11,12 @@ body {
   font-family: sans-serif;
   color: rgb(255, 255, 255);
   background-image: url('/images/login_image.png');
-  background-size: 125%;
   /* background-position: center; */
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 125%;
   
 
 }
@@ -31,7 +34,7 @@ a:hover {
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #777b80;
   border: 0;
   padding: 1%;
   color: white;
@@ -42,7 +45,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #145cb4;
 }
 
 .wrapper {
