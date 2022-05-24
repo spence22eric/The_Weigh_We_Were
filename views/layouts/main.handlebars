@@ -3,48 +3,43 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
 
     <title>The Weigh We Were</title>
-    <!-- Input links to stylesheets and APIs-->    
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-   <link rel="stylesheet" href="../stylesheets/style.css">
+    <!-- Input links to stylesheets and APIs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/style.css">
 
 </head>
 
 <body class="img">
     <div>
-    <header>
-        <!-- Background image -->
-        
 
-        <h1>
-            <a>The Weigh We Were</a>
-        </h1>
+        <header>
+            <img src="../../public/images/login_image.png" />
+            <h1>
+                <a>The Weigh We Were</a>
+            </h1>
+            <nav>
+                <button id="logout" class="btn-style">logout</button>
+                <a href="/login">login</a>
+            </nav>
 
-        <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
+        </header>
 
-    </header>
-
-    <main>
-        {{{ body }}}
-    </main>
-    <footer>
-        Have a great workout!
-    </footer>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+            Have a great workout!
+        </footer>
     </div>
 
     <!--JavaScript link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-</body>
+    <script src="/javascript/login.js">
+</body >
 
-</html>
+</html >
