@@ -12,32 +12,26 @@
 
 </head>
 
-<body>
-    <div class="wrapper">
-    <header>
-        <img src="/images/login_image.jpeg">
-+
-        <h1>
-            <a>The Weigh We Were</a>
-        </h1>
 
-        <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
+<body class="img">
+    <div>
+        <header>
+            <h1>
+                <a>The Weigh We Were</a>
+            </h1>
+            <nav>
+                <button id="logout" class="btn-style">logout</button>
+                <a href="/login">login</a>
+            </nav>
 
-    </header>
+        </header>
 
-    <main>
-        {{{ body }}}
-    </main>
-    <footer>
-        Have a great workout!
-    </footer>
+        <main>
+            {{{ body }}}
+        </main>
+        <footer>
+            Have a great workout!
+        </footer>
     </div>
 
     <!--JavaScript link-->
