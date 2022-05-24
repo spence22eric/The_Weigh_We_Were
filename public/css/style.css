@@ -17,7 +17,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 125%;
-  
+
 
 }
 
@@ -49,13 +49,13 @@ button:hover {
 }
 
 .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
 
 header {
   border-bottom: 1px solid #ccc;
