@@ -16,7 +16,8 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            alert('You are now logged in!');
+            document.location.replace('/selection');
         } else {
             alert(response.statusText);
         }
