@@ -1,0 +1,56 @@
+header {
+    background-image: linear-gradient(to right, rgb(14, 61, 99), rgb(34, 18, 90));
+    color: white;
+    padding: 7px;
+}
+
+header h1 {
+    background-color: rgb(106, 101, 101);
+    width: 30%;
+    text-align: center;
+    padding: 1px 8px;
+    margin: 10px 0px;
+}
+
+nav {
+    margin: 10px 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: x-large;
+    color: var(--tertiary-color);
+    border-bottom: 4px solid;
+}
+
+header nav ul li {
+    margin: 2px 5px;
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.container {
+    padding: 15px;
+
+}
+
+.conditions {
+    line-height: 30px;
+    padding: 10px;
+}
+
+button {
+    margin-top: 10px;
+
+}
