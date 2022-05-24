@@ -2,8 +2,8 @@
     box-sizing: border-box;
   }
 
-  body {
-    background-image: "./assets/images/login_image.jpeg";
+  body, html {
+    background-image: "./public/images/workout.png";
     height: 100%;
     padding: 0;
     margin: 0;
