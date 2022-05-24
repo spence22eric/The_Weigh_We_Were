@@ -26,10 +26,23 @@ app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+app.use(express.static('./assets/images/login_image.jpeg'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Route to display static src images
+app.get("/static", (req, res) => {
+    res.render("static");
+});
+  
+// Route to display dynamic src images
+app.get("/dynamic", (req, res) => {
+    imageList = [];
+    imageList.push({ src: "./assets/images/login_image.jpeg", name: "login_image" });
+    res.render("dynamic", { imageList });
+});
 
 app.use(require('./controllers/'));
 

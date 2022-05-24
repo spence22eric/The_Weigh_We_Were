@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
+    background-color: #d3d3d3;
   }
 
-  body { 
-    background-image: '/public/images/login_image.jpeg';   
+  body {  
     height: 100%;
     padding: 0;
     margin: 0;
@@ -37,14 +37,14 @@
     background-color: #3486eb;
   }  
   
-  .wrapper {
+  /* .wrapper {
     width: 100%;
     min-height: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   header {
     border-bottom: 1px solid #ccc;
@@ -58,10 +58,26 @@
     font-size: 1em;
   }
 
-  main {
+   .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  /* main {
     flex: 1;
     padding: 2% 4%;
-  }
+  } */
 
   .btn-style {
     background: none;
